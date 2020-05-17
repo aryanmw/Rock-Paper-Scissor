@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialScreen"
+    android:background="#F1E6C5">
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:text="ROCK PAPER SCISSOR BATTLE"
+        android:id="@+id/tv_welcome"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#742A23"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:layout_below="@id/tv_gridsize"
+        android:text="Choose who you want to play against"
+        android:textSize="25dp"
+        android:id="@+id/tv_numberOfPlayers"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="150dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll2"
+        android:layout_below="@+id/tv_numberOfPlayers">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/normal_button_background"
+            android:id="@+id/multiplayer"
+            android:text="1 V 1"
+            android:fontFamily="@font/arbutus"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:id="@+id/soloPlayer"
+            android:background="@drawable/normal_button_background"
+            android:text="vs Comp"
+            android:fontFamily="@font/arbutus"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arbutus"
+        android:layout_below="@id/tv_welcome"
+        android:text="Choose the number of rounds"
+        android:textSize="25dp"
+        android:id="@+id/tv_gridsize"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll1"
+        android:layout_below="@+id/tv_gridsize">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/normal_button_background"
+            android:id="@+id/button_3x3"
+            android:text="1"
+            android:fontFamily="@font/arbutus"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/button_5x5"
+            android:background="@drawable/normal_button_background"
+            android:text="3"
+            android:fontFamily="@font/arbutus"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/button_7x7"
+            android:background="@drawable/normal_button_background"
+            android:text="5"
+            android:fontFamily="@font/arbutus"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
